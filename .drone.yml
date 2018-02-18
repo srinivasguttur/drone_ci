@@ -3,6 +3,6 @@ pipeline:
     image: redis
     commands:
       - env
-      - echo "Hello Drone!"
+      - echo "Hello Drone! Its Rock"
     when:
       event: push

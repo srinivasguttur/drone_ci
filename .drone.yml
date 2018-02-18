@@ -1,5 +1,7 @@
-image: python
-script:
- - python helloworld.py
- when:
-  event: push
+pipeline:
+  build:
+   image: python
+   commands:
+     - python helloworld.py
+   when:
+    event: push

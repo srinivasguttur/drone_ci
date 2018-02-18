@@ -1,7 +1,8 @@
 pipeline:
   build:
-   image: python
-   commands:
-     - python helloworld.py
-   when:
-    event: push
+    image: redis
+    commands:
+      - env
+      - echo "Hello Drone!"
+    when:
+      event: push

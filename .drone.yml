@@ -1,0 +1,6 @@
+image: python
+script:
+ - python helloworld.py
+ - echo "Build has been completed."
+ when:
+  event: push
